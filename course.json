@@ -1,0 +1,124 @@
+{
+  "version": "1",
+  "title": "Gitcourse Guide",
+  "author": "Freeman",
+  "description": "欢迎来到Gitcourse课程制作指南。本指南涵盖了Gircourse的基本重要特性，主要包括：项目构成、实训环境、课件制作、流程控制。",
+  "preload": "scripts/auth.js",
+  "scenarios": [
+    {
+      "title": "Gitcourse基础知识",
+      "shell":"/bin/bash",
+      "vscode_port":1234,
+      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:test",
+      "description": "一开始，将学习关于gitcourse项目文件目录结构的所有基础内容。",
+      "steps": [
+        {
+          "program":"scripts/bootstrap.sh",
+          "title": "项目概览",
+          "text": "scenario/ep1/1.md",
+          "oj":"http://online-judge.kfcoding.com/problem/1000"
+        },
+        {
+          "title": "发布课程",
+          "text": "scenario/ep1/2.md",
+          "oj":"http://online-judge.kfcoding.com/problem/1-2"
+        },
+        {
+          "title": "访问课程",
+          "text": "scenario/ep1/3.md"
+        }
+      ]
+    },
+    {
+      "title": "Gitcourse容器制作工具",
+      "shell":"/bin/bash",
+      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:test",
+      "description": "接下来，将学习如何制作gitcourse容器镜像。",
+      "steps": [
+        {
+          "title": "进入制作模式",
+          "text": "scenario/ep2/1.md",
+          "extraTab":"http://gitcourse.kfcoding.com/scenarios/0/?edit=true&hide_tutorial=true&compact=true#https://github.com/gitcourse-sample/gitcourse-guide"
+        },
+        {
+          "title": "修改容器",
+          "text": "scenario/ep2/2.md",
+          "extraTab":"http://gitcourse.kfcoding.com/scenarios/0/?edit=true&hide_tutorial=true&compact=true#https://github.com/gitcourse-sample/gitcourse-guide"
+        },
+        {
+          "title": "提交发布",
+          "text": "scenario/ep2/3.md",
+          "extraTab":"http://gitcourse.kfcoding.com/scenarios/0/?edit=true&hide_tutorial=true&compact=true#https://github.com/gitcourse-sample/gitcourse-guide"
+        }
+      ]
+    },
+    {
+      "title": "Gitcours图文课件制作",
+      "shell":"/bin/bash",
+      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:test",
+      "description": "接下来，将学习如何制作gitcourse图文课件。",
+      "steps": [
+        {
+          "title": "查看已经修改的容器",
+          "text": "scenario/ep3/0.md"
+        },
+        {
+          "title": "Markdown语法及规范",
+          "text": "scenario/ep3/1.md",
+          "extraTab":"https://www.w3cschool.cn/markdownyfsm/markdownyfsm-odm6256r.html"
+        },
+        {
+          "title": "图片插入",
+          "text": "scenario/ep3/2.md"
+        }
+      ]
+    },
+    {
+      "title": "Gitcours配置文件:基础部分",
+      "shell":"/bin/bash",
+      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:v1",
+      "description": "接下来，将学习如何填写gitcourse的配置文件。首先是基础部分",
+      "steps": [
+        {
+          "title": "course.json基本字段",
+          "text": "scenario/ep4/1.md",
+          "extraTab":"http://gitcourse.kfcoding.com/?compact=true#https://code.kfcoding.com/liuchangfreeman/gitcourse-guide"
+        },
+        {
+          "title": "scenario基础字段",
+          "text": "scenario/ep4/2.md",
+          "extraTab":"http://gitcourse.kfcoding.com/scenarios/0?compact=true#https://code.kfcoding.com/liuchangfreeman/gitcourse-guide"
+        },
+        {
+          "title": "step基础字段",
+          "text": "scenario/ep4/3.md",
+          "extraTab":"http://gitcourse.kfcoding.com/?compact=true#https://code.kfcoding.com/liuchangfreeman/gitcourse-guide"
+        }
+      ]
+    },
+    {
+      "title": "Gitcours配置文件:进阶",
+      "shell":"/bin/bash",
+      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:v1",
+      "description": "接下来，将通过一个例子学习使用gitcourse配置文件的高阶内容。",
+      "steps": [
+        {
+          "title": "配置容器服务",
+          "program":"scripts/init.sh",
+          "text": "scenario/ep5/1.md",
+          "check":"check/check.sh"
+        },
+        {
+          "title": "访问容器服务",
+          "text": "scenario/ep5/2.md",
+          "extraTab": "[domain]:[:8888]/index.html"
+        },
+        {
+          "title": "外部网页",
+          "text": "scenario/ep5/3.md",
+          "extraTab":"http://www.baidu.com"
+        }
+      ]
+    }
+  ]
+}
