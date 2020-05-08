@@ -2,7 +2,7 @@
   "version": "1",
   "title": "Gitcourse Guide",
   "author": "Freeman",
-  "description": "欢迎来到Gitcourse课程制作指南。本指南涵盖了Gircourse的基本重要特性，主要包括：项目构成、实训环境、课件制作、流程控制。",
+  "description": "欢迎来到Gitcourse课程制作指南。本指南涵盖了Gircourse的基本重要特性，主要包括：项目构成、课件制作、流程控制。",
   "preload": "scripts/auth.js",
   "scenarios": [
     {
@@ -26,29 +26,6 @@
         {
           "title": "访问课程",
           "text": "scenario/ep1/3.md"
-        }
-      ]
-    },
-    {
-      "title": "Gitcourse容器制作工具",
-      "shell":"/bin/bash",
-      "environment": "registry.cn-hangzhou.aliyuncs.com/envs/gitcourse:test",
-      "description": "接下来，将学习如何制作gitcourse容器镜像。",
-      "steps": [
-        {
-          "title": "进入制作模式",
-          "text": "scenario/ep2/1.md",
-          "extraTab":"http://gitcourse.kfcoding.com/scenarios/0/?edit=true&hide_tutorial=true&compact=true#https://github.com/gitcourse-sample/gitcourse-guide"
-        },
-        {
-          "title": "修改容器",
-          "text": "scenario/ep2/2.md",
-          "extraTab":"http://gitcourse.kfcoding.com/scenarios/0/?edit=true&hide_tutorial=true&compact=true#https://github.com/gitcourse-sample/gitcourse-guide"
-        },
-        {
-          "title": "提交发布",
-          "text": "scenario/ep2/3.md",
-          "extraTab":"http://gitcourse.kfcoding.com/scenarios/0/?edit=true&hide_tutorial=true&compact=true#https://github.com/gitcourse-sample/gitcourse-guide"
         }
       ]
     },
