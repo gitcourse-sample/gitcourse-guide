@@ -6,7 +6,7 @@ function getCookie(name) {
     };
 }
   
-if (document.location.host == 'gitcourse.kfcoding.com') {
+if (document.location.host == 'gitcourse.test.kfcoding.com') {
     var token=getCookie('token');
     fetch('http://api.kfcoding.com/api/basic/users/current', {
         headers: {
