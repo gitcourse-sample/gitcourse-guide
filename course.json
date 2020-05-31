@@ -16,12 +16,11 @@
           "program":"scripts/bootstrap.sh",
           "title": "项目概览",
           "text": "scenario/ep1/1.md",
-          "oj":"http://online-judge.kfcoding.com/problem/1000"
+          "oj":"http://online-judge.kfcoding.com/problem/1-2"
         },
         {
           "title": "发布课程",
           "text": "scenario/ep1/2.md",
-          "oj":"http://online-judge.kfcoding.com/problem/1-2"
         },
         {
           "title": "访问课程",
